@@ -4,6 +4,10 @@ function volume_sphere(event) {
     //Write your code here
 	let r=document.getElementById("radius").value;
 	let v=document.getElementById("volume");
+	if(r<0 || isNaN(r)){
+		v.value="NaN"
+		return ;
+	}
     // let subm=documet.getElementById("submit")
 	let ans= (4/3) * Math.PI * Math.pow(r, 3); //you can also use (r**3) instead of math.pow
 	ans=ans.toFixed(4);
