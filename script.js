@@ -6,6 +6,7 @@ function volume_sphere(event) {
 	let v=document.getElementById("volume");
     // let subm=documet.getElementById("submit")
 	let ans= (4/3) * Math.PI * Math.pow(r, 3);
+	ans=ans.toFixed(4);
 	v.value=ans;
 	
 } 
