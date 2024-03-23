@@ -5,7 +5,7 @@ function volume_sphere(event) {
 	let r=document.getElementById("radius").value;
 	let v=document.getElementById("volume");
     // let subm=documet.getElementById("submit")
-	let ans= (4/3) * Math.PI * Math.pow(r, 3);
+	let ans= (4/3) * Math.PI * Math.pow(r, 3); //you can also use (r**3) instead of math.pow
 	ans=ans.toFixed(4);
 	v.value=ans;
 	
